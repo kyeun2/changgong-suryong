@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sub1">
+
+    <ScrollView
+        android:id="@+id/scrollView111"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ill" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="목차"
+                android:textSize="36dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="클릭하시면 해당 항목으로 이동합니다."
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 제품 알아보기"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/textView203"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1-1. 제품 소개"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/textView204"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1-2. 구성품 확인"
+                android:textSize="24dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView205"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 사용방법"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/textView206"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2-1. 센서 부착하기"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/textView207"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2-2. 어플 설정하기"
+                android:textSize="24dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView208"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 부록"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView209"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3-1. 개발자 정보"
+                android:textSize="24dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 제품 알아보기 □"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView212"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 제품 소개 □"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/textView213"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  생존 여부 알리미(이하 생존알림)는 사용자의 현관문에 센서를 부착하여 안전 여부를 탐지하는 서비스입니다. \n\n  현관문의 열림/닫힘 정보를 활용·분석하여 이상상황을 감지하고 사용자의 생존 여부를 확인합니다.
+\n\n  장기간 알림에 응답이 없을 경우 비상 상황으로 간주하고 미리 설정한 보호자의 연락처 또는 112로 신고하여 사고 발생 시 빠른 대처가 가능하도록 조치합니다.\n\n  아래 그림은 비상상황 간주 시 어플에서 자동으로 신고문자를 발송하는 모습입니다."
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/exp1" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/textView214"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 구성품 확인 □"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView215"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문열림 감지 센서 기기 1개\n어플리케이션 설치 QR코드 사진 1매"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <TextView
+                android:id="@+id/textView216"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 사용방법 □"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView217"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 센서 부착하기 □"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView218"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  문열림 감지 센서 기기를 설치하셨나요?\n\n  가장 먼저 현관문에 문열림 감지 센서 기기를 설치해주세요.\n\n  문에는 선이 없는 부분을, 문 틀에는 선이 연결된 부분을 부착해주세요.\n\n  문을 닫았을 때 아래 센서가 다음과 같이 맞닿게 해주세요.\n\n  알맞게 맞닿지 않으면 이상상황 감지가 힘드므로 주의해서 설치해주세요!"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/exp2" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView219"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 어플 설정하기 □"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView220"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 간편설정을 통해 정보 입력\n※주의※"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textView221"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  해당 어플은 위험상황 감지 시 비상출동을 위해 사용자의 이름, 주소, 보호자 연락처를 수집합니다. 별도의 서버가 아닌 어플 내에 저장되는 정보이기 때문에 이는 개발자도 알 수 없습니다. \n  해당 정보는 사용자의 위험상황 감지 시 신고를 하기 위함으로만 쓰이므로 이를 동의하셔야 정상적인 사용이 가능합니다."
+                android:textSize="18dp"
+                android:textColor="#0000FF"/>
+
+            <TextView
+                android:id="@+id/textView222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n  어플을 처음 실행했을 때의 화면(이하 메인화면)에서 '간편설정' 버튼을 클릭해주세요.\n\n  화면 내 유의사항을 천천히 읽으신 뒤, '다음'버튼을 눌러주세요. 서비스 사용을 위한 기본 정보 입력을 시작합니다.\n\n  '주소'입력의 경우, 시/도 를 선택하고 '확인'버튼을 눌면 시/군/구가 출력됩니다. 정확한 주소지를 설정하신 뒤, 상세 주소를 직접 입력해주세요. 압력완료를 누르면 기입한 정보가 저장됨과 동시에 다음 화면으로 넘어가게 됩니다. \n\n  사용자의 신원 확인을 위한 성함을 입력하시고 '입력완료'를 누르면 저장과 동시에 다음 화면으로 넘어갑니다. \n\n  긴급상황 발생 시 이를 알리기 위한 연락처를 입력합니다. 입력하지 않을 경우 112로 신고되도록 설정되어있으니, 유의하시길 바랍니다.\n\n  기입한 내용을 다시 한 번 확인한 후 이상이 없다면 '일치' 버튼을 누르면, 며칠 간격으로 어느 시간에 안전 여부를 확인할 것인지 설정해주세요.\n\n  설정한 시간이 되면 알람이 울리고 생존 여부 확인을 요청합니다. 상단의 알림을 확인하신 뒤, 선택하여 OK 버튼을 누르시면 안전한 상황으로 인식하여 다음날 알림이 울리게 됩니다.\n\n  만약 오랜 기간동안 확인해주시지 않을 경우, 자동으로 신고가 들어가니 이 점 반드시 주의해주시길 바랍니다."
+                android:textSize="18dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView223"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 기기설정을 통해 문열림센서와 연결하기"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textView224"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  메인화면에서 '기기설정' 버튼을 클릭해주세요. \n\n  문열림 센서 기기와 연결하려면, [블루투스 연결] 부분을 눌러주세요. 사용자의 핸드폰이 블루투스 기능을 사용할 수 있어야 합니다.\n\n  정상적으로 블루투스가 켜졌을 경우, 연결할 기기의 목록을 출력합니다. 이 중에서 'HC-06'을 선택한 뒤 조금만 기다려 주세요.\n\n  연결이 완료되면 버튼 좌측에 '활성화'라는 문구와 함께 문열림센서의 상태에 따라 OPEN 또는 CLOSE를 출력합니다."
+                android:textSize="18dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/textView225"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 부록 □"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textView226"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 개발자 정보 □"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView227"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="□ 성신여자대학교 □\n융합보안공학과\nTeam 창공수룡\n\n사용해주셔서 감사합니다."
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
