@@ -32,8 +32,11 @@ public class RingtonePlayingService extends Service {
     final int SEND_SMS_PERMISSION_REQUEST_CODE = 1;
 
     public NotificationManager mNotificationManager;
+<<<<<<< HEAD
     public static final String NOTIFICATION_CHANNEL_ID_CHECK = "20002";
 
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
     public static int fail_count = 0;
     public static Context ringContext;
 
@@ -89,17 +92,27 @@ public class RingtonePlayingService extends Service {
                     new Intent(getApplicationContext(), AlarmCheck.class),
                     PendingIntent.FLAG_UPDATE_CURRENT);
 
+<<<<<<< HEAD
             mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
             NotificationCompat.Builder mBuilder =
                     new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID_CHECK)
                             //.setSmallIcon(R.drawable.ic_warning) // 상단바에 노출되는 작은 이미지
+=======
+
+            //아마 여기부분이 낮은버전에서 사용되는 코드인 것으로 추정
+            //NOtificationCompat.Builder에서 다른걸로 변경할 것을 추천. (오레오 기준 하위버전/상위버전 if문 작성 필요)
+            NotificationCompat.Builder mBuilder =
+                    new NotificationCompat.Builder(this)
+                            .setSmallIcon(R.drawable.warning) // 상단바에 노출되는 작은 이미지
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
                             .setContentTitle("알림이 울립니다")
                             .setContentText("확인해주세요")
                             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                             .setAutoCancel(true) // 알림창 클릭하면 사라짐
                             .setContentIntent(mPendingIntent); // 알림창 클릭하면 AlarmCheck로 이동
 
+<<<<<<< HEAD
             //OREO API 26 이상에서는 채널 필요
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 mBuilder.setSmallIcon(R.drawable.ic_warning); //mipmap 사용시 Oreo 이상에서 시스템 UI 에러남
@@ -116,6 +129,9 @@ public class RingtonePlayingService extends Service {
 
             }else mBuilder.setSmallIcon(R.mipmap.ic_launcher); // Oreo 이하에서 mipmap 사용하지 않으면 Couldn't create icon: StatusBarIcon 에러남
 
+=======
+            mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             mNotificationManager.notify(1, mBuilder.build());
 
 

@@ -4,11 +4,16 @@ package com.example.myapplication;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+<<<<<<< HEAD
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+=======
+import android.content.DialogInterface;
+import android.content.Intent;
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -36,10 +41,15 @@ public class Detailsetting extends AppCompatActivity {
     List<String> mListPairedDevices;
 
     Button mBtnBluetooth;
+<<<<<<< HEAD
     Button button23;
     TextView mTvBluetoothStatus;
     TextView textView37;
     TextView textView10;
+=======
+    TextView mTvBluetoothStatus;
+    TextView textView37;
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
     Handler mBluetoothHandler;
     Detailsetting.ConnectedBluetoothThread mThreadConnectedBluetooth;
@@ -52,6 +62,7 @@ public class Detailsetting extends AppCompatActivity {
     final static UUID BT_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     @Override
+<<<<<<< HEAD
     public void onBackPressed() {
         Intent intent = new Intent(
                 getApplicationContext(), MainActivity.class
@@ -61,6 +72,8 @@ public class Detailsetting extends AppCompatActivity {
     }
 
     @Override
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detailsetting);
@@ -71,8 +84,11 @@ public class Detailsetting extends AppCompatActivity {
         mBtnBluetooth = (Button)findViewById(R.id.blue);
         mTvBluetoothStatus = (TextView)findViewById(R.id.textView32);
         textView37 = (TextView)findViewById(R.id.textView37);
+<<<<<<< HEAD
         textView10 = (TextView)findViewById(R.id.textView10);
         button23 = (Button)findViewById(R.id.button23);
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -99,6 +115,7 @@ public class Detailsetting extends AppCompatActivity {
             }
         };
 
+<<<<<<< HEAD
         button23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,6 +130,8 @@ public class Detailsetting extends AppCompatActivity {
 
             }
         });
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
 
         After.setOnClickListener(new View.OnClickListener(){
@@ -122,7 +141,10 @@ public class Detailsetting extends AppCompatActivity {
                         getApplicationContext(), MainActivity.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
 
@@ -133,7 +155,10 @@ public class Detailsetting extends AppCompatActivity {
                         getApplicationContext(), MainActivity.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
     }
@@ -276,7 +301,11 @@ public class Detailsetting extends AppCompatActivity {
             }
         }
     }
+<<<<<<< HEAD
 
 
 }
 
+=======
+}
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f

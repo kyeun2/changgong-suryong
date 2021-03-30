@@ -1,7 +1,10 @@
 package com.example.myapplication;
 
 import android.app.AlarmManager;
+<<<<<<< HEAD
 import android.app.NotificationChannel;
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -32,6 +35,7 @@ import java.util.Calendar;
 
 
 public class Simplesetting5 extends AppCompatActivity {
+<<<<<<< HEAD
 
     @Override
     public void onBackPressed() {
@@ -45,6 +49,11 @@ public class Simplesetting5 extends AppCompatActivity {
     public AlarmManager alarmManager;
     public PendingIntent mPendingIntent1;
     public static final String NOTIFICATION_CHANNEL_ID = "10001";
+=======
+    public static Context sContext;
+    public AlarmManager alarmManager;
+    public PendingIntent mPendingIntent1;
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
     ArrayAdapter<CharSequence> dayspin1;
     String choice_day = "";
     int int_day;
@@ -161,18 +170,25 @@ public class Simplesetting5 extends AppCompatActivity {
 
 
                 // 푸시알림 객체 생성 및 설정
+<<<<<<< HEAD
                 NotificationManager mNotificationManager =
                         (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 
                 NotificationCompat.Builder mBuilder =
                         new NotificationCompat.Builder(Simplesetting5.this,  NOTIFICATION_CHANNEL_ID)
                                 .setSmallIcon(R.drawable.ic_warning) // 상단바에 노출되는 작은 이미지
+=======
+                NotificationCompat.Builder mBuilder =
+                        new NotificationCompat.Builder(Simplesetting5.this)
+                                .setSmallIcon(R.drawable.warning) // 상단바에 노출되는 작은 이미지
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
                                 .setContentTitle("생존 확인 어플 실행 중")
                                 .setContentText(choice_day+"일 간격으로 "+ ampm + hour+"시 "+timePicker.getMinute()+"분에 알림이 울립니다.")
                                 .setLargeIcon(mLargeIcon) // 상단바 큰 이미지
                                 .setAutoCancel(false) // 알림이 설정되었을 경우, 항상 상단바에 노출
                                 .setContentIntent(mPendingIntent2); // notification 알림을 터치하면 MainActivity로 전환
 
+<<<<<<< HEAD
                 //OREO API 26 이상에서는 채널 필요
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     mBuilder.setSmallIcon(R.drawable.ic_warning); //mipmap 사용시 Oreo 이상에서 시스템 UI 에러남
@@ -190,6 +206,10 @@ public class Simplesetting5 extends AppCompatActivity {
                 }else mBuilder.setSmallIcon(R.mipmap.ic_launcher); // Oreo 이하에서 mipmap 사용하지 않으면 Couldn't create icon: StatusBarIcon 에러남
 
 
+=======
+                NotificationManager mNotificationManager =
+                        (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
                 mNotificationManager.notify(0, mBuilder.build());
 
 
@@ -201,10 +221,14 @@ public class Simplesetting5 extends AppCompatActivity {
                 Intent intent1 = new Intent(
                         getApplicationContext(), MainActivity.class
                 );
+<<<<<<< HEAD
                 intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent1);
                 finish();
+=======
+                startActivity(intent1);
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
             }
         });
@@ -216,7 +240,10 @@ public class Simplesetting5 extends AppCompatActivity {
                         getApplicationContext(), Simplesetting4.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
     }

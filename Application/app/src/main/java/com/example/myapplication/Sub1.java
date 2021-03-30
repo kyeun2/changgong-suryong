@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -12,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Sub1 extends AppCompatActivity {
 
     @Override
+<<<<<<< HEAD
     public void onBackPressed() {
         Intent intent = new Intent(
                 getApplicationContext(), MainActivity.class
@@ -21,6 +25,8 @@ public class Sub1 extends AppCompatActivity {
     }
 
     @Override
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sub_1);

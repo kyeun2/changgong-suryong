@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Alarmreport extends AppCompatActivity {
 
+<<<<<<< HEAD
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(
@@ -23,6 +24,8 @@ public class Alarmreport extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +77,10 @@ public class Alarmreport extends AppCompatActivity {
                         getApplicationContext(), MainActivity.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
 
@@ -85,7 +91,10 @@ public class Alarmreport extends AppCompatActivity {
                         getApplicationContext(), MainActivity.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
 

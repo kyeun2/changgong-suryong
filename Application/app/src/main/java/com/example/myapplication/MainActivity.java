@@ -2,11 +2,17 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.app.Activity;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.Manifest;
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,7 +25,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+<<<<<<< HEAD
 
+=======
+    SharedPreferences add_pref;
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
     public static Context checkContext;
     String[] permission_list = {
             Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -33,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         checkContext = this;
+<<<<<<< HEAD
         // 권한확인
         checkPermission();
 
@@ -50,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
             prefs.edit().putBoolean("isFirstRun", false).apply();
         }
 
+=======
+
+        // 권한확인
+        checkPermission();
+
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
         TextView addressView = (TextView)findViewById(R.id.text_address);
         TextView nameView = (TextView)findViewById(R.id.text_Name);
         TextView numView = (TextView)findViewById(R.id.text_num);
@@ -87,7 +104,10 @@ public class MainActivity extends AppCompatActivity {
                         getApplicationContext(), Simplesetting.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
         b.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +117,10 @@ public class MainActivity extends AppCompatActivity {
                         getApplicationContext(), Sub1.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
             }
         });
@@ -109,7 +132,10 @@ public class MainActivity extends AppCompatActivity {
                         getApplicationContext(), Detailsetting.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
 
@@ -120,7 +146,10 @@ public class MainActivity extends AppCompatActivity {
                         getApplicationContext(), Alarmreport.class
                 );
                 startActivity(intent);
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
             }
         });
 

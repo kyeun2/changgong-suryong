@@ -49,9 +49,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+<<<<<<< HEAD
                 android:text="블루투스 연결하기"
                 android:textAlignment="center"
                 android:textSize="18sp" />
+=======
+                android:textAlignment="center"
+                android:text="블루투스 연결하기" />
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
 
             <Button
                 android:id="@+id/blue"
@@ -63,6 +68,7 @@
         </LinearLayout>
 
 
+<<<<<<< HEAD
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
@@ -94,6 +100,8 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
+=======
+>>>>>>> 84367abe340ad00909dee7da0c7a4bdfa42af73f
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
