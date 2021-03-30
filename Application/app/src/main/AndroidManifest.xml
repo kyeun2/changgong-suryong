@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/warning"
+        android:label="생존확인알리미"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sub1"></activity>
+        <activity android:name=".Simplesetting"></activity>
+        <activity android:name=".Simplesetting1"></activity>
+        <activity android:name=".Simplesetting2"></activity>
+        <activity android:name=".Simplesetting3"></activity>
+        <activity android:name=".Simplesetting4"></activity>
+        <activity android:name=".Simplesetting5"></activity>
+        <activity android:name=".Alarmreport"></activity>
+        <activity android:name=".Detailsetting"></activity>
+        <activity android:name=".AlarmCheck"></activity>
+        <receiver android:name=".AlarmReceiver"/>
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true"></service>
+
+    </application>
+
+</manifest>
